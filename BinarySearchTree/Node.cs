@@ -30,6 +30,7 @@ namespace BinarySearchTree
                 else
                 {
                     Leftc.Add(item);
+                    leftCount++;
                 }
             }
             else
@@ -41,10 +42,14 @@ namespace BinarySearchTree
                 else
                 {
                     Rightc.Add(item);
+                    rightCount++;
                 }
             }
         }
-
+        public void Size()
+        {
+            Console.WriteLine("Size = " + (1 + this.leftCount + this.rightCount));
+        }
         public void Display()
         {
             if (Leftc != null)
@@ -61,5 +66,6 @@ namespace BinarySearchTree
         }
     }
 }
+
 
 
